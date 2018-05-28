@@ -81,7 +81,7 @@ the new passphrase.
 			Callbacks: map[logical.Operation]framework.OperationFunc{
 				logical.ReadOperation:   b.pathAccountsRead,
 				logical.CreateOperation: b.pathAccountsCreate,
-				logical.UpdateOperation: b.pathAccountUpdate,
+				logical.UpdateOperation: b.pathAccountsCreate,
 				logical.DeleteOperation: b.pathAccountsDelete,
 			},
 		},
